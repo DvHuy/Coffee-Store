@@ -178,4 +178,69 @@ header .navbar {
   border: 2px solid var(--secondary-color);
 }
 
+/* About Section */
+.about-section{
+  padding: 120px 0;
+  background-color: var(--light-pink-color);
+}
+
+.section-content {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: var(--site-max-width);
+}
+
+.about-section .section-content{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+
+.about-section .section-content .about-image-wrapper .about-image{
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: var(--border-radius-circle);
+  
+}
+
+.about-details .title {
+  font-size: var(--font-size-xxl);
+  color: var(--primary-color);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: 10px;
+}
+
+.about-details .title:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  margin-top: 5px;
+}
+
+.about-details .text{
+  color: var(--dark-color);
+  font-size: var(--font-size-m);
+  margin-top: 20px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.social-link-list{
+  margin-top: 20px;
+}
+
+.social-link-list .social-link{
+  display: inline-block;
+  color: #6d6060;
+  text-align: center;
+  line-height: 40px;
+  font-size: var(--font-size-l);
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
 
