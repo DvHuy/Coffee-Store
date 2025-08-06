@@ -28,6 +28,10 @@
   --site-max-width: 1300px;
 }
 @media screen and (max-width: 900px) {
+  .navbar.fixed {
+    position: fixed;
+    width: 100%;
+  }
   .navbar :where(#menu-close-button, #menu-open-button) {
     font-size: var(--font-size-xl);
     display: block;
@@ -52,6 +56,8 @@
     padding-top: 100px;
     background-color: var(--white-color);
     transition: left 0.3s ease-in-out;
+     position: fixed;
+  z-index: 9999;
   }
 
   .navbar .nav-menu.show-mobile-menu {
@@ -65,25 +71,45 @@
     margin-top: 17px;
   }
 
-  .hero-section{
+  .hero-section {
     flex-direction: column-reverse;
-    gap:50;
+    gap: 50;
     text-align: center;
     justify-content: center;
     padding: 30px 20px 20px;
   }
 
-  .hero-section .hero-details :is(.subtitle, .description){
+  .hero-section .hero-details :is(.subtitle, .description) {
     max-width: 100%;
   }
 
-  .hero-section .hero-details .buttons{
+  .hero-section .hero-details .buttons {
     justify-content: center;
   }
 
-  .hero-section .hero-img-wrapper{
+  .hero-section .hero-img-wrapper {
     max-width: 270px;
     margin: 0 auto;
   }
 
+  /* About us */
+  .about-section {
+    padding: 50px 20px;
+  }
+  .about-section .section-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .about-section .about-details .text {
+    font-size: var(--font-size-l);
+    text-align: center;
+  }
+
+  /* Contact us */
+  .contact-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
